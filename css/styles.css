@@ -47,6 +47,26 @@ button {
     cursor: pointer;
 }
 
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.hide {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px
+}
+
 /* =============== body =============== */
 
 
@@ -55,12 +75,7 @@ button {
 
 /* =============== header =============== */
 
-.container {
-    width: 1200px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
+
 
 .main-header {
     border-bottom: 1px solid #ECECEC;
@@ -94,7 +109,7 @@ button {
     padding-bottom: 24px;
 }
 
-.logo-black {
+.logo-padding_black {
     color: var(--logo-black-color);
 }
 
@@ -102,13 +117,13 @@ button {
     color: var(--white-color);
 }
 
-.nav-items {
+.nav-list {
     display: flex;
     align-items: center;
     gap: 50px;
     
 }
-.nav-item {
+.nav-list__item {
     color: var(--main-color);
     font-weight: 500;
     font-size: 14px;
@@ -137,13 +152,13 @@ button {
     top: 77px;
 }
 
-.contacts-box{
+.contact-box{
     display: flex;
     align-items: center;
     gap: 50px;
 }
 
-.contacts-item {
+.contact-box__link {
     color: var(--contact-color);
     fill: currentColor;
     font-weight: 500;
@@ -157,37 +172,37 @@ button {
     transition: color var(--time-function);
 }
 
-.nav-item:hover,
-.nav-item:focus,
-.contacts-item:hover,
-.contacts-item:focus {
+.nav-list__item:hover,
+.nav-list__item:focus,
+.contact-box__link:hover,
+.contact-box__link:focus {
     color: var(--tuch-color);
 }
 
 
 
-.email-box {
+.contact-box__item {
     display: flex;
     align-items: center;
     column-gap: 10px;
 }
 
-.envelope {
+.contact-box__envelope {
     width: 16px;
     height: 12px;
     margin-right: 10px;
 }
 
-.smartphone {
+.contact-box__smartphone {
     width: 10px;
     height: 16px;
     margin-right: 10px;
 }
 
-.envelope:hover,
-.envelope:focus,
-.smartphone:hover,
-.smartphone:focus {
+.contact-box__envelope:hover,
+.contact-box__envelope:focus,
+.contact-box__smartphone:hover,
+.contact-box__smartphone:focus {
 }
 
 /* =============== header =============== */
@@ -256,18 +271,7 @@ button {
     padding-top: 94px;
 }
 
-.hide {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px
-}
+
 
 .list-our-features {
     display: flex;
